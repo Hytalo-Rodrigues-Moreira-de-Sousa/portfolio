@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Heebo', sans-serif;
 }
@@ -17,27 +21,27 @@ nav a{
     margin-right: 23px;
 }
 
-.about-me-section{
+#about-me-section{
     width: 860px;
     margin: 175px auto 0;
     display: flex;
     justify-content: space-between;
 }
 
-.about-me-section div h1{
+#about-me-section div h1{
     font-size: 44px;
     line-height: 60px;
     font-weight: bold;
     margin-bottom: 40px;    
 }
 
-.about-me-section div p{
+#about-me-section div p{
     width: 497px;
     font-size: 16px;
     line-height: 23px;
 }
 
-.about-me-section div button {
+#about-me-section div button {
     margin-top: 38px;
     width: 208px;
     height: 47px;
@@ -50,24 +54,24 @@ nav a{
     color: #FFF;
 }
 
-.about-me-section div img{
+#about-me-section div img{
     width: 243px;
     height: 243px;
     border-radius: 50%;
 }
 
-.my-projects-section{
+#my-projects-section{
     background-color: #384772;
     padding: 24px 0;
     margin: 70px 0;
 }
 
-.my-projects-section h2{
+#my-projects-section h2{
     font-size: 28px;
     color: #FFF;
 }
 
-.my-projects-section section{
+#my-projects-section section{
     width: 860px;
     margin: 0 auto;
 }
@@ -86,6 +90,11 @@ nav a{
     margin: 0 0 20px 0;
     margin-bottom: 16px;
     border-radius: 8px;
+}
+
+.projects-container div a{
+    text-decoration: none;
+    color: #000;
 }
 
 .projects-container div div{
@@ -107,17 +116,17 @@ nav a{
     margin-left: 23px;
 }
 
-.skills-container{
+#skills-container{
     width: 100%;
 }
 
-.skills-container h2{
+#skills-container h2{
     font-size: 28px;
     margin-bottom: 6px;
     text-align: center;
 }
 
-.skills-container div{
+#skills-container div{
     width: 100%;
     background: #384772;
     padding: 12px 0;
@@ -125,11 +134,11 @@ nav a{
     justify-content: center;
 }
 
-.skills-container div img{
+#skills-container div img{
     height: 75px;  
 }
 
-.skills-container div img + img{
+#skills-container div img + img{
     margin-left: 23px;
 }    
 
@@ -146,4 +155,104 @@ footer{
 footer p{
     width: 100%;
     text-align: center;
+    margin-top: 26px;
+    margin-bottom: 45px;
+}
+
+footer img + img{
+    margin-left: 35px;
+}
+
+#peq{
+    margin-left: 7px;
+}
+
+@media (max-width: 400px){
+    nav{
+        width: 100%;
+    }
+
+    nav a{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    #about-me-section{
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    #about-me-section div h1{
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 44px;
+        text-align: center;
+    }
+
+    #about-me-section div p{
+        font-size: 16px;
+        width: 328px;
+        text-align: center;
+    }
+
+    #about-me-section div img{
+        width: 177px;
+        height: 177px;
+        margin: 36px;
+    }
+
+    #about-me-section div button{
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    }
+
+    #my-projects-section{
+        display: flex;
+    }
+
+    #my-projects-section section h2{
+        font-size: 22px;
+        text-align: center;  
+    }
+
+    .projects-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .projects-container div{
+        width: 345px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .projects-container div h3{
+        font-size: 22px;
+    }
+
+    .projects-container div p{
+        font-size: 16px;
+        max-width: 314px;
+    }
+
+    #skills-container h2{
+        font-size: 24px;
+    }
+
+    #skills-container div{
+        flex-wrap: wrap;
+        padding: 4px 0 34px;
+    }
+
+    #skills-container img, #skills-container div img + img{
+        margin: 40px 30px 0px;
+    }
+
+    footer{
+        width: 100%;
+    }
+
 }
